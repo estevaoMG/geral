@@ -2,21 +2,17 @@ import React from 'react'
 import styled from 'styled-components'
 import imagem from '../components/assets/Imagem.png'
 import Login from '../components/Login'
-import Main from './Main'
 
 const App = () => {
   return (
-    <Container>
-      <h1>test</h1>      
+    <Container>     
       <Imagem/>
       <Login/>
-      <Main/>
     </Container>    
   );
 };
 
 const Container = styled.div`
-  position: relative;
   width: 1440px;
   height: 840px;
   background: #312E38;

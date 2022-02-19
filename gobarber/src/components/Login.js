@@ -1,18 +1,23 @@
 import React from 'react'
 import styled from 'styled-components'
 import logo from '../components/assets/Logo.png'
+import InputEmail from './InputEmail'
+import InputPassword from './InputPassword'
 
 const Logon = () => {
   return (
-    <Container>
-      <Logo/>
-      <Txt1>Faça seu login</Txt1>
-    </Container>
+      <Container>    
+        <Logo/>
+        <Txt1>Faça seu login</Txt1>
+        <InputEmail/>
+        <InputPassword/>        
+      </Container>    
   )
 }
 
 const Container = styled.div`
-  position: absolute;
+  background: red;
+  position: relative;
   width: 340px;
   height: 616px;
   left: 160px;
@@ -20,18 +25,18 @@ const Container = styled.div`
 `
 const Logo = styled.div`
   background-image: url(${logo});
-  height: 133.99998474121094px;
-  width: 230.03334045410156px;
-  left: 214.9999999999999px;
-  top: 122px;
-  border-radius: 0px;
+  position: relative;
+  width: 230.03px;
+  height: 134px;
+  left: 55px;
+  top: 0px;
 `
 const Txt1 = styled.div`
-  position: absolute;
+  position: relative;
   width: 164px;
   height: 32px;
-  left: 248px;
-  top: 336px;
+  left: 88px;
+  top: 92px;
   font-family: Roboto Slab;
   font-style: normal;
   font-weight: 500;
