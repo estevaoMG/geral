@@ -24,7 +24,6 @@ const Imagem = styled.div`
   height: 840px;
   left: 660px;
   top: 0px;
-  mix-blend-mode: screen;
 `
 
 export default App

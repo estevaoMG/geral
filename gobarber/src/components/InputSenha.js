@@ -1,13 +1,12 @@
 import React from 'react'
 import styled from 'styled-components'
-import iconEmail from './assets/IconEmail.png'
+import iconSenha from './assets/IconSenha.png'
 
 const Input = ({ type, placeholder}) => {
   return (
     <Container>
       <Icon/>
-      <StyledInput
-      placeholder={placeholder} type={"email"}/>
+      <StyledInput placeholder = {placeholder} type={"password"}/>
       
     </Container>
   )
@@ -40,7 +39,7 @@ color: #666360;
 `
 const Icon = styled.div`
   position: relative;
-  background-image: url(${iconEmail});
+  background-image: url(${iconSenha});
   width: 20px;
   height: 18px;
   left: 16px;

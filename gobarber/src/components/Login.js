@@ -2,15 +2,19 @@ import React from 'react'
 import styled from 'styled-components'
 import logo from '../components/assets/Logo.png'
 import InputEmail from './InputEmail'
-import InputPassword from './InputPassword'
+import InputSenha from './InputSenha'
+
+
 
 const Logon = () => {
   return (
       <Container>    
         <Logo/>
         <Txt1>Faça seu login</Txt1>
-        <InputEmail/>
-        <InputPassword/>        
+        <Form>
+        <InputEmail type="email" placeholder="E-mail"/>
+        <InputSenha type="password" placeholder="Senha"/>
+        </Form> 
       </Container>    
   )
 }
@@ -45,5 +49,14 @@ const Txt1 = styled.div`
   text-align: center;
   color: #F4EDE8;
 `
+const Form = styled.div`
+  position: relative;
+  left: 0px;
+  top: 116px;
+  width:340px;
+  height:120px;
+`
+
+
 
 export default Logon
