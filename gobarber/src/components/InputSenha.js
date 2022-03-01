@@ -17,7 +17,7 @@ const Container = styled.div`
     height: 56px;
     background: #232129;
     border-radius: 10px;
-    margin-bottom: 8px;
+    margin-bottom: 24px;
 `
 const StyledInput = styled.input`
   position: relative;
