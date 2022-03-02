@@ -5,28 +5,24 @@ import InputEmail from './InputEmail'
 import InputSenha from './InputSenha'
 import criar from './assets/Criar.png'
 
-
-
 const Logon = () => {
   return (
-      <Container>    
-        <Logo/>
-        <Txt1>Faça seu login</Txt1>
-        <Form>
+    <Container>    
+      <Logo/>
+      <Txt1>Faça seu login</Txt1>
+      <Form>
         <InputEmail type="email" placeholder="E-mail"/>
         <InputSenha type="password" placeholder="Senha"/>
         <button>Entrar</button>
-        </Form>
-        <Txt2>Esqueci minha senha</Txt2>
-        <Criar/>
-        <Txt3>Criar conta</Txt3>
-      </Container>    
+      </Form>
+      <Txt2>Esqueci minha senha</Txt2>
+      <Criar/>
+      <Txt3>Criar conta</Txt3>
+    </Container>    
   )
 }
 
-const Container = styled.div`
-  
-  
+const Container = styled.div` 
   position: relative;
   width: 340px;
   height: 616px;
@@ -56,13 +52,11 @@ const Txt1 = styled.p`
   color: #F4EDE8;
 `
 const Form = styled.div`
-  position: relative;
-  
+  position: relative;  
   left: 0px;
   top: 116px;
   width:340px;
   height:200px;
-
   button {
     width: 340px;
     height: 56px;
@@ -80,40 +74,40 @@ const Form = styled.div`
   }
 `
 const Txt2 = styled.p`
-position: relative;
-width: 164px;
-height: 21px;
-left: 88px;
-top: 137px;
-font-family: Roboto Slab;
-font-style: normal;
-font-weight: normal;
-font-size: 16px;
-line-height: 21px;
-text-align: center;
-color: #F4EDE8;
+  position: relative;
+  width: 164px;
+  height: 21px;
+  left: 88px;
+  top: 137px;
+  font-family: Roboto Slab;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 21px;
+  text-align: center;
+  color: #F4EDE8;
 `
 const Criar = styled.div`
   background-image: url(${criar});
-position: relative;
-width: 20px;
-height: 20px;
-left: 112.5px;
-top: 210px;
+  position: relative;
+  width: 20px;
+  height: 20px;
+  left: 112.5px;
+  top: 210px;
 `
 const Txt3 = styled.p`
-position: relative;
-width: 85px;
-height: 21px;
-left: 140px;
-top: 190px;
-font-family: Roboto Slab;
-font-style: normal;
-font-weight: normal;
-font-size: 16px;
-line-height: 21px;
-text-align: center;
-color: #FF9000;
+  position: relative;
+  width: 85px;
+  height: 21px;
+  left: 140px;
+  top: 190px;
+  font-family: Roboto Slab;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 21px;
+  text-align: center;
+  color: #FF9000;
 `
 
 export default Logon
