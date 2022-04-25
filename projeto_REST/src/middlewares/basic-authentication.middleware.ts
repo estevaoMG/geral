@@ -4,13 +4,13 @@ import userRepository from "../repositories/user.repository";
 
 async function basicAuthenticationMiddleware(req: Request, res: Response, next: NextFunction) {
     try {
-        const authorizationHeader = req.headers['authorization'];
+        const authorizationHeader =  req.headers['authorization'];
 
-    if (!authorizationHeader) {
-        throw new ForbiddenError('Credenciais não informadas!');
-    }
+        if (!authorizationHeader) {
+            throw new ForbiddenError('Credenciais não informadas');
+        }
 
-    const [authenticationType, token] = authorizationHeader.split(' ');
+        const [authenticationType, token] = authorizationHeader.split(' ');
 
     if (authenticationType !== 'Basic' || !token) {
         throw new ForbiddenError('Tipo de autenticação inválido!');
@@ -27,7 +27,7 @@ async function basicAuthenticationMiddleware(req: Request, res: Response, next: 
     const user = await userRepository.findByUsernameAndPassword(username, password);
 
     if (!user) {
-        throw new ForbiddenError('Usuário ou senha inválidos');
+        throw new ForbiddenError('Usuário ou senha inválidos!');
     }
 
     req.user = user;
